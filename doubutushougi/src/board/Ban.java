@@ -1,10 +1,6 @@
 package board;
 
-import java.io.BufferedReader;
-import java.io.FileWriter;
-import java.io.IOException;
 
-import koma.CalcKoma;
 import koma.Hiyoko;
 import koma.Kirin;
 import koma.Koma;
@@ -45,8 +41,8 @@ public class Ban {
 		// キリン
 		Koma kirin1 = new Kirin(1);
 		Koma kirin2 = new Kirin(2);
-		setBanarray(1, 1, kirin1);
-		setBanarray(3, 4, hiyoko2);
+		setBanarray(1, 1, kirin2);
+		setBanarray(3, 4, kirin1);
 		
 		// ライオン
 		Koma lion1 = new Lion(1);
@@ -106,7 +102,7 @@ public class Ban {
 		Koma koma = null;
 		for (int i=1; i<4; i++) {
 			for (int j=4;j>0;j--) {
-				koma = getBanarray(j, i);
+				koma = getBanarray(i, j);
 				if (koma==null) {
 					System.out.print("　　　");
 				} else {
@@ -117,47 +113,51 @@ public class Ban {
 		}
 	}
 	
-	// ファイルへの書き出し
-	public void saveFile(FileWriter fileWriter) {
-		try {
-			for (int i=0; i<4; i++) {
-				for (int j=0;j<5;j++) {
-					if (banarray[i][j]==null) {
-						fileWriter.write("0\n");
-					} else {
-						banarray[i][j].saveFile(fileWriter);
-					}
-				}
-			}
-		} catch (IOException e) {
-			// TODO 自動化された catch ブロック
-			e.printStackTrace();
-		}
+	public void removeBanArray (int i, int j) {
+		banarray[i][j] = null;
 	}
 	
+//	// ファイルへの書き出し
+//	public void saveFile(FileWriter fileWriter) {
+//		try {
+//			for (int i=0; i<4; i++) {
+//				for (int j=0;j<5;j++) {
+//					if (banarray[i][j]==null) {
+//						fileWriter.write("0\n");
+//					} else {
+//						banarray[i][j].saveFile(fileWriter);
+//					}
+//				}
+//			}
+//		} catch (IOException e) {
+//			// TODO 自動化された catch ブロック
+//			e.printStackTrace();
+//		}
+//	}
+	
 	// ファイルの読み込み。正しければtrue
-	public boolean loadFile (BufferedReader br) {
-		try {
-			String str = null;
-			for (int i=0;i<4;i++) {
-				for (int j=0;j<5;j++) {
-					str = br.readLine();
-					if (str.equals("0")) {
-						banarray[i][j] = null;
-					} else {
-						Koma koma = CalcKoma.makeLoad_Koma(str);
-						if (koma==null) {
-							return false;
-						}
-						banarray[i][j] = koma;
-					}
-				}
-			}
-		} catch (IOException e) {
-			// TODO 自動化された catch ブロック
-			e.printStackTrace();
-			return false;
-		}
-		return true;
-	}
+//	public boolean loadFile (BufferedReader br) {
+//		try {
+//			String str = null;
+//			for (int i=0;i<4;i++) {
+//				for (int j=0;j<5;j++) {
+//					str = br.readLine();
+//					if (str.equals("0")) {
+//						banarray[i][j] = null;
+//					} else {
+//						Koma koma = CalcKoma.makeLoad_Koma(str);
+//						if (koma==null) {
+//							return false;
+//						}
+//						banarray[i][j] = koma;
+//					}
+//				}
+//			}
+//		} catch (IOException e) {
+//			// TODO 自動化された catch ブロック
+//			e.printStackTrace();
+//			return false;
+//		}
+//		return true;
+//	}
 }

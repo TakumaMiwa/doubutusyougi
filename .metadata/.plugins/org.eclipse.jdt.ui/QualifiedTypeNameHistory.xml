@@ -1,5 +1,41 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="java.io.BufferedReader"/>
+    <fullyQualifiedTypeName name="koma.Hiyoko"/>
+    <fullyQualifiedTypeName name="koma.Kirin"/>
+    <fullyQualifiedTypeName name="koma.Lion"/>
+    <fullyQualifiedTypeName name="koma.Zou"/>
+    <fullyQualifiedTypeName name="calcValue.LikelyToBeTokenValue"/>
+    <fullyQualifiedTypeName name="koma.CalcKoma"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="java.io.FileReader"/>
+    <fullyQualifiedTypeName name="board.MakeBoardList"/>
+    <fullyQualifiedTypeName name="board.CalcKyokumenFoul"/>
+    <fullyQualifiedTypeName name="main.Calc"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.io.IOException"/>
+    <fullyQualifiedTypeName name="main.Player"/>
+    <fullyQualifiedTypeName name="java.awt.Color"/>
+    <fullyQualifiedTypeName name="board.Komadai"/>
+    <fullyQualifiedTypeName name="javafx.geometry.VPos"/>
+    <fullyQualifiedTypeName name="javafx.geometry.Pos"/>
+    <fullyQualifiedTypeName name="javafx.geometry.Insets"/>
+    <fullyQualifiedTypeName name="board.FreeKyokumen"/>
+    <fullyQualifiedTypeName name="calcValue.TumiCheck"/>
+    <fullyQualifiedTypeName name="calcValue.Value"/>
+    <fullyQualifiedTypeName name="javafx.scene.image.Image"/>
+    <fullyQualifiedTypeName name="javafx.scene.image.ImageView"/>
+    <fullyQualifiedTypeName name="board.Board"/>
+    <fullyQualifiedTypeName name="main.Kihu"/>
+    <fullyQualifiedTypeName name="board.Kyokumen"/>
+    <fullyQualifiedTypeName name="java.io.File"/>
+    <fullyQualifiedTypeName name="javafx.scene.shape.Rectangle"/>
+    <fullyQualifiedTypeName name="koma.Koma"/>
+    <fullyQualifiedTypeName name="javafx.scene.input.MouseEvent"/>
+    <fullyQualifiedTypeName name="app.Frames"/>
+    <fullyQualifiedTypeName name="board.CalcMoveHuman"/>
+    <fullyQualifiedTypeName name="board.Move"/>
+    <fullyQualifiedTypeName name="javafx.scene.paint.Color"/>
+    <fullyQualifiedTypeName name="javafx.scene.text.Text"/>
+    <fullyQualifiedTypeName name="javafx.scene.text.TextAlignment"/>
 </qualifiedTypeNameHistroy>
